@@ -1,0 +1,1 @@
+coverage html --include="$SITE_URL*" --omit="admin.py"

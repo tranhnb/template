@@ -1,0 +1,1 @@
+coverage run manage.py test --settings={{ project_name }}.settings.test
