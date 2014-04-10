@@ -6,5 +6,8 @@ read applicationname
 echo "Pickup one option: init or auto"
 read option
 
-echo "Start south migration process"
+echo "Start south migration eveluate process"
 python manage.py schemamigration $applicationname  --$option
+
+echo "South is syncing up application model schema to DB"
+python manage.py migrate $applicationname
